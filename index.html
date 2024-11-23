@@ -44,11 +44,13 @@
 			<nav id="navigation">
 				<input id="nav-toggle" type="checkbox" />
 				<div class="logo">
-					<a href="#">ALICIA<strong>GRANDE</strong></a>
+					<a href="#">
+						<img class="title" src="pictures/title.png" alt="Alicia Grande" />
+					</a>
 				</div>
 				<ul class="links">
 					<li><a class="tab" href="#home">Lo último</a></li>
-					<li><a class="tab" href="#about">Sobre mí</a></li>
+					<li><a class="tab" href="#about">Bio</a></li>
 					<li><a class="tab" href="#subscribe">Suscribirme</a></li>
 					<li><a class="tab" href="#contact">Contacto</a></li>
 				</ul>
@@ -61,25 +63,36 @@
 		</header>
 
 		<section class="section" id="home">
-			<h1>Flashbacks</h1>
-			<p>Escucha mi primer single.</p>
-			<div class="social-media">
-				<a href="#"> <img src="social/spotify.png" alt="Spotify" /></a>
-				<a href="https://www.youtube.com/@aliciagrande1201">
-					<img src="social/youtube.png" alt="YouTube"
-				/></a>
-			</div>
-			<div class="cover">
-				<img src="pictures/flashbacks.jpg" alt="Flashbacks cover" />
+			<div class="container">
+				<div class="album-container">
+					<a href="#">
+						<img
+							class="album-cover"
+							src="pictures/flashbacks.jpg"
+							alt="Flashbacks"
+						/>
+					</a>
+				</div>
+				<div class="album-links">
+					<h1>Flashbacks</h1>
+					<p>Escucha mi primer single.</p>
+					<div class="social-media">
+						<a href="#"> <img src="social/spotify.png" alt="Spotify" /></a>
+						<a href="https://www.youtube.com/@aliciagrande1201">
+							<img src="social/youtube.png" alt="YouTube"
+						/></a>
+					</div>
+				</div>
 			</div>
 		</section>
 
+		<div class="divider divider-1">
+			<img class="polaroids" src="pictures/polaroids2.png" alt="" />
+		</div>
+
 		<section class="section" id="about">
 			<div class="container">
-				<h3>Sobre mí</h3>
-				<div class="picture">
-					<img src="pictures/alicia.jpg" />
-				</div>
+				<h2>Bio</h2>
 				<div class="bio">
 					<p>
 						Alicia Grande (Oviedo, 2002) es una cantante asturiana que comenzó
@@ -88,6 +101,7 @@
 						proyecto musical, <i>Flashbacks</i>.
 					</p>
 				</div>
+				<h3>Sigue a Alicia</h3>
 				<div class="social-media">
 					<a href=""> <img src="social/spotify.png" alt="Spotify" /></a>
 					<a href="https://www.tiktok.com/@aliciagrandeee">
@@ -103,9 +117,13 @@
 			</div>
 		</section>
 
+		<div class="divider divider-2">
+			<img class="polaroids" src="pictures/polaroids1.png" alt="" />
+		</div>
+
 		<section class="section" id="subscribe">
 			<div class="container">
-				<h3>Suscribirme</h3>
+				<h2>Suscribirme</h2>
 				<p>Suscríbete para enterarte de nuevos lanzamientos.</p>
 				<form
 					class="subscribe-form"
@@ -125,9 +143,13 @@
 			</div>
 		</section>
 
+		<div class="divider divider-3">
+			<img class="polaroids" src="pictures/polaroids3.png" alt="" />
+		</div>
+
 		<section class="section" id="contact">
 			<div class="container">
-				<h3>Contacto</h3>
+				<h2>Contacto</h2>
 				<form
 					class="contact-form"
 					id="contact-form"
