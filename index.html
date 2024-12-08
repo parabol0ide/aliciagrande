@@ -2,10 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"
-		/>
+		<meta name="viewport" content="width=device-width" />
 
 		<title>Alicia Grande</title>
 		<link rel="stylesheet" href="style.css" />
@@ -17,6 +14,10 @@
 		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Oooh+Baby&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
 			rel="stylesheet"
 		/>
 
@@ -43,10 +44,8 @@
 		<header>
 			<nav id="navigation">
 				<input id="nav-toggle" type="checkbox" />
-				<div class="logo">
-					<a href="#">
-						<img class="title" src="pictures/title.png" alt="Alicia Grande" />
-					</a>
+				<div class="title">
+					<h1><a href="index.html">Alicia Grande</a></h1>
 				</div>
 				<ul class="links">
 					<li><a class="tab" href="#home">Lo último</a></li>
@@ -62,46 +61,132 @@
 			</nav>
 		</header>
 
-		<section class="section" id="home">
-			<div class="container">
-				<div class="album-container">
-					<a href="#">
-						<img
-							class="album-cover"
-							src="pictures/flashbacks.jpg"
-							alt="Flashbacks"
-						/>
-					</a>
+		<div id="content">
+			<section class="section" id="home">
+				<div class="container">
+					<div class="album-container">
+						<a href="#">
+							<img
+								class="album-cover"
+								src="pictures/flashbacks.jpg"
+								alt="Flashbacks"
+							/>
+						</a>
+					</div>
+					<div class="album-links">
+						<h1>Flashbacks</h1>
+						<p>Escucha mi primer EP.</p>
+						<div class="social-media">
+							<a href="#"> <img src="social/spotify.png" alt="Spotify" /></a>
+							<a href="https://www.youtube.com/@aliciagrande1201">
+								<img src="social/youtube.png" alt="YouTube"
+							/></a>
+						</div>
+					</div>
 				</div>
-				<div class="album-links">
-					<h1>Flashbacks</h1>
-					<p>Escucha mi primer single.</p>
+			</section>
+
+			<div class="divider">
+				<img class="polaroids" src="pictures/polaroids2.png" alt="" />
+			</div>
+
+			<section class="section" id="about">
+				<div class="container">
+					<h2>Bio</h2>
+					<div class="bio">
+						<p>
+							Alicia Grande (Oviedo, 2002) es una cantante asturiana que comenzó
+							en la música a muy temprana edad. Con 14 años comenzó a escribir
+							sus propias canciones y es en 2024 cuando decide lanzar su primer
+							proyecto musical, <i>Flashbacks</i>.
+						</p>
+					</div>
+					<h3>Sigue a Alicia</h3>
 					<div class="social-media">
-						<a href="#"> <img src="social/spotify.png" alt="Spotify" /></a>
+						<a href=""> <img src="social/spotify.png" alt="Spotify" /></a>
+						<a href="https://www.tiktok.com/@aliciagrandeee">
+							<img src="social/tiktok.png" alt="TikTok"
+						/></a>
+						<a href="https://www.instagram.com/aliciagrandee">
+							<img src="social/instagram.png" alt="Instagram"
+						/></a>
 						<a href="https://www.youtube.com/@aliciagrande1201">
 							<img src="social/youtube.png" alt="YouTube"
 						/></a>
 					</div>
 				</div>
+			</section>
+
+			<div class="divider">
+				<img class="polaroids" src="pictures/polaroids1.png" alt="" />
 			</div>
-		</section>
 
-		<div class="divider divider-1">
-			<img class="polaroids" src="pictures/polaroids2.png" alt="" />
-		</div>
-
-		<section class="section" id="about">
-			<div class="container">
-				<h2>Bio</h2>
-				<div class="bio">
-					<p>
-						Alicia Grande (Oviedo, 2002) es una cantante asturiana que comenzó
-						en la música a muy temprana edad. Con 14 años comenzó a escribir sus
-						propias canciones y es en 2024 cuando decide lanzar su primer
-						proyecto musical, <i>Flashbacks</i>.
-					</p>
+			<section class="section" id="subscribe">
+				<div class="container">
+					<h2>Suscribirme</h2>
+					<p>Suscríbete para enterarte de nuevos lanzamientos.</p>
+					<form
+						class="subscribe-form"
+						id="subscribe-form"
+						name="submit-to-google-sheet"
+					>
+						<input
+							class="subscribe-inputs"
+							type="email"
+							name="email"
+							placeholder="Email"
+							required
+						/>
+						<button type="submit">Enviar</button>
+						<div class="result" id="subscribe-result"></div>
+					</form>
 				</div>
-				<h3>Sigue a Alicia</h3>
+			</section>
+
+			<div class="divider">
+				<img class="polaroids" src="pictures/polaroids3.png" alt="" />
+			</div>
+
+			<section class="section" id="contact">
+				<div class="container">
+					<h2>Contacto</h2>
+					<form
+						class="contact-form"
+						id="contact-form"
+						action="https://api.web3forms.com/submit"
+						method="POST"
+					>
+						<input
+							type="hidden"
+							name="access_key"
+							value="ba3d9ffd-9965-4dc7-ba04-77dff6335e4d"
+						/>
+						<input
+							type="text"
+							name="name"
+							placeholder="Nombre"
+							class="contact-inputs"
+							required
+						/>
+						<input
+							type="email"
+							name="email"
+							placeholder="Email"
+							class="contact-inputs"
+							required
+						/>
+						<textarea
+							name="message"
+							placeholder="Mensaje"
+							class="contact-message"
+							required
+						></textarea>
+						<button type="submit">Enviar</button>
+						<div class="result" id="contact-result"></div>
+					</form>
+				</div>
+			</section>
+			<footer>
 				<div class="social-media">
 					<a href=""> <img src="social/spotify.png" alt="Spotify" /></a>
 					<a href="https://www.tiktok.com/@aliciagrandeee">
@@ -114,103 +199,18 @@
 						<img src="social/youtube.png" alt="YouTube"
 					/></a>
 				</div>
-			</div>
-		</section>
-
-		<div class="divider divider-2">
-			<img class="polaroids" src="pictures/polaroids1.png" alt="" />
+				<div class="bottom-text">
+					<p>
+						&copy;
+						<script>
+							document.write(new Date().getFullYear())
+						</script>
+						Alicia Grande |
+						<a href="terms.html">Política de privacidad</a>
+					</p>
+				</div>
+			</footer>
 		</div>
-
-		<section class="section" id="subscribe">
-			<div class="container">
-				<h2>Suscribirme</h2>
-				<p>Suscríbete para enterarte de nuevos lanzamientos.</p>
-				<form
-					class="subscribe-form"
-					id="subscribe-form"
-					name="submit-to-google-sheet"
-				>
-					<input
-						class="subscribe-inputs"
-						type="email"
-						name="email"
-						placeholder="Email"
-						required
-					/>
-					<button type="submit">Enviar</button>
-					<div class="result" id="subscribe-result"></div>
-				</form>
-			</div>
-		</section>
-
-		<div class="divider divider-3">
-			<img class="polaroids" src="pictures/polaroids3.png" alt="" />
-		</div>
-
-		<section class="section" id="contact">
-			<div class="container">
-				<h2>Contacto</h2>
-				<form
-					class="contact-form"
-					id="contact-form"
-					action="https://api.web3forms.com/submit"
-					method="POST"
-				>
-					<input
-						type="hidden"
-						name="access_key"
-						value="ba3d9ffd-9965-4dc7-ba04-77dff6335e4d"
-					/>
-					<input
-						type="text"
-						name="name"
-						placeholder="Nombre"
-						class="contact-inputs"
-						required
-					/>
-					<input
-						type="email"
-						name="email"
-						placeholder="Email"
-						class="contact-inputs"
-						required
-					/>
-					<textarea
-						name="message"
-						placeholder="Mensaje"
-						class="contact-message"
-						required
-					></textarea>
-					<button type="submit">Enviar</button>
-					<div class="result" id="contact-result"></div>
-				</form>
-			</div>
-		</section>
-
-		<footer>
-			<div class="social-media">
-				<a href=""> <img src="social/spotify.png" alt="Spotify" /></a>
-				<a href="https://www.tiktok.com/@aliciagrandeee">
-					<img src="social/tiktok.png" alt="TikTok"
-				/></a>
-				<a href="https://www.instagram.com/aliciagrandee">
-					<img src="social/instagram.png" alt="Instagram"
-				/></a>
-				<a href="https://www.youtube.com/@aliciagrande1201">
-					<img src="social/youtube.png" alt="YouTube"
-				/></a>
-			</div>
-			<div class="bottom-text">
-				<p>
-					&copy;
-					<script>
-						document.write(new Date().getFullYear())
-					</script>
-					Alicia Grande |
-					<a href="terms.html">Política de privacidad</a>
-				</p>
-			</div>
-		</footer>
 		<!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
 		<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
 		<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
