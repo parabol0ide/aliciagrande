@@ -6,7 +6,7 @@
 	background-attachment: fixed;
 	overflow-y: scroll;
 }
-@media (max-width: 1180px) {
+@media (max-width: 850px) {
 	html {
 		background-image: url(pictures/background.jpg);
 		background-size: 100vh;
