@@ -1,6 +1,6 @@
 ﻿html {
 	scroll-behavior: smooth;
-	background-image: url(pictures/background.jpg);
+	background-image: url(pictures/background-h.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -8,6 +8,7 @@
 }
 @media (max-width: 1180px) {
 	html {
+		background-image: url(pictures/background.jpg);
 		background-size: 100vh;
 	}
 }
@@ -452,6 +453,7 @@ footer {
 	-ms-flex-pack: center;
 	justify-content: center;
 	text-align: center;
+	font-size: small;
 }
 
 .bottom-text p a {
